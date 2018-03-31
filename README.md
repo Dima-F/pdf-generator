@@ -31,7 +31,12 @@ Then in code
     };
     //this will create by default pdf directory (always created at current working directory) and uuid as pdf file's name
     generator.create(definition);
-    //or you can define manual settings
-    generator.create(definition,'pdf/invoices','invoice123');
+    //to change behavior, init generator your own config object
+    let config = {
+        filename:`another_name`,
+        directory:'pdf/invoices'
+    }
+    generator.init(config);
+    generator.create(definition);
 ```
 Find us in [github](https://github.com/Dima-F/pdf-generator)
