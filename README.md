@@ -1,9 +1,11 @@
-# This is simple wrapper for [pdfmake](http://pdfmake.org) lib
+## This is simple wrapper for [pdfmake](http://pdfmake.org) lib
 
-## Usage
+Usage
+```
 npm i --save @fiialo/pdf-generator
 
-## Then in code
+```
+Then in code
 
 ```javascript
     const generator = require('@fiialo/pdf-generator');
@@ -32,4 +34,4 @@ npm i --save @fiialo/pdf-generator
     //or you can define manual settings
     generator.create(definition,'pdf/invoices','invoice123');
 ```
-## Find us in [github](https://github.com/Dima-F/pdf-generator)
+Find us in [github](https://github.com/Dima-F/pdf-generator)
